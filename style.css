@@ -1,0 +1,211 @@
+body{background-color:white; font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+
+    
+/* Log in Page */
+    #mainbox{background-color:#f0f2f5;
+        box-sizing: border-box; 
+        align-self: center;
+        position:absolute;
+        top: 0px;
+        left: 0px;
+        padding: 30px;
+        text-align: center;  
+        width:100vw;
+        height:auto;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        gap:30px;
+
+   }
+
+    #slidediv{width: 380px;
+        height:581px;
+        background:url("./img/slideholder.png");
+        background-size:450px 632px;
+        background-position: center;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        position:relative;
+        top:0;
+        left:0;
+        z-index:1;
+       }
+
+   #slide{width: 240px;
+    height:535px;
+    position:absolute;
+    top:27px;
+    left:117px;
+    background-size: 240px 535px;
+    animation: slideshow 8s infinite alternate;
+    }
+
+    @keyframes slideshow{
+        0%{background-image:url("./img/slide1.png");
+            }
+        33%{background-image:url("./img/slide2.png");
+           }
+        66%{background-image:url("./img/slide3.png");
+            }
+        100%{background-image:url("./img/slide4.png");
+            }
+    }
+
+       #loginbox{display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+       }
+
+    #loginbox, #signupdiv{background-color: white;
+        text-align: center; 
+        padding: 25px; 
+        border: 1px solid rgba(128, 128, 128, 0.304); 
+        width: 350px;
+        margin:auto;
+        margin-bottom: 15px;
+        }
+
+        #signupdiv{font-size: 13px;}
+
+        #instagramlogo{width:175px;
+            height: 51px;
+            padding: 20px;
+        }
+
+
+        #orLine{display: flex;
+        flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+width: 100%;
+color: rgba(128, 128, 128, 0.906);
+margin-bottom: 10px;}
+
+
+
+
+
+
+    #line{background-color: rgba(128, 128, 128, 0.241);
+        height: 1px; 
+        width:50%;
+        padding: 0 10px;
+        align-self: center;
+        
+        }
+
+        #withFacebookdiv{
+    margin: 5px 0 10px;
+   }
+
+        #withFacebook{
+    font-weight: bold;
+color:#385185;
+font-size: 14px;
+display: flex;
+flex-direction: row;
+gap: 7px;}
+  
+        #facebooklogo{width: 16px;
+        height:16px;
+    }
+    #forgot{
+    color:#385185;
+    font-size:11.5px;}
+
+
+   
+    input{width: 92%; 
+        height: 35px; 
+        font-size: 13px; 
+        border-radius: 3px; 
+        border: 1px solid rgba(161, 160, 160, 0.363); 
+        font-family: sans-serif;
+        text-indent: 7px; 
+        color: rgba(74, 71, 71, 0.717);
+        box-shadow: 0 0 1px 0.1px #dadcde;
+        box-sizing: border-box;
+        background-color: rgba(128, 128, 128, 0.080);
+        transition: 0.5s;
+        outline:none;
+    }
+
+    input:focus{border:1.5px solid rgba(161, 160, 160, 0.863);}
+
+    /* log in */
+    #b1{color:white; 
+        background-color:rgba(100, 172, 255, 0.427); 
+        width: 95%; border-radius: 3px; 
+        border-width: 0px; 
+        height: 32px; 
+        font-size: 100%; 
+        font-weight: bold;
+        transition: 500ms ease-in-out;
+    margin: 10px 0;}
+
+    /* forgot password */
+    a{font-family: sans-serif; 
+        text-decoration: none; 
+        color: rgb(0, 119, 255); 
+        font-size: 100%;
+    letter-spacing: 0.3px;}
+
+  
+    #signup{font-weight: bold;}
+
+    #get{font-size: 13px;
+    margin: 20px;}
+
+        #store{margin-top:25px;}
+        #store img{width:135px;
+        height: 40px;}
+        
+
+
+
+    @media screen and (max-width: 900px) {
+        #slidediv {
+            display: none;
+           
+             /* The width is 100%, when the viewport is 800px or smaller */
+        }
+    }
+        @media screen and (max-width: 450px) {
+            #loginbox, #signupdiv {
+                border: none;
+                background-color: transparent;
+               
+                 /* The width is 100%, when the viewport is 800px or smaller */
+            }
+        }
+
+        #logo{
+            width:99vw;
+            height:99%;
+            background-color: white;
+            position:absolute;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index:10;
+        }
+
+        #logo img{width:50px;
+        height:50px;
+    opacity: 0.5;
+   animation:bop 500ms ease-in-out infinite alternate;}
+
+   @keyframes bop {
+       0%{}
+       100%{width: 60px;
+    height: 60px;}
+   }
+   
